@@ -1,8 +1,14 @@
+#lang racket
+
 (require rackunit
          "palindrome-detector.rkt")
 
-(check-true (detect-palindrome '(1 2 3 2 1)))
-(check-false (detect-palindrome '(1 2 3 4 5)))
+(test-case "palindrome list of numbers is detected"
+           (check-true (detect-palindrome '(1 2 3 2 1))))
+(test-case "non-palindrome list of numbers is rejected"
+           (check-false (detect-palindrome '(1 2 3 4 5))))
 
-(check-true (detect-palindrome [:foo :bar :foo]))
-(check-true (detect-palindrome "racecar"))
+(test-case "palindrome list of attributes is detected"
+           (check-true (detect-palindrome [:foo :bar :foo])))
+(test-case "palindrome string is detected"
+           (check-true (detect-palindrome "racecar")))
