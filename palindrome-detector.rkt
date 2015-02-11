@@ -7,5 +7,4 @@
   (define testlist (if (string? infoo) (string->list infoo) infoo))
   
   ;@ reverse, compare
-  (if (equal? (reverse testlist) testlist) #t #f)
-  )
+  (equal? (reverse testlist) testlist))
