@@ -1,4 +1,5 @@
 # Palindrome-Detector
+[![Join the chat at https://gitter.im/FPUGS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/FPUGS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A Solution to [FPUGS/Palindrome-Detector](https://github.com/FPUGS/Palindrome-Detector) in OCaml.
 
@@ -8,12 +9,12 @@ OCaml had some problems with this one because it doesn't support function overlo
 
 1. [Install OCaml](http://ocaml.org/)
 2. Make!
-  
+
   ```bash
   make
   ```
 3. Run!
-  
+
   ```bash
   ./palindrome
   ```
